@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MatButtonToggle } from '@angular/material/button-toggle';
+import { MatButtonToggle, MatButtonToggleGroup } from '@angular/material/button-toggle';
 import { TranslateService } from '@ngx-translate/core';
 
 /**
@@ -19,7 +19,8 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-language-switcher',
   imports: [
-    MatButtonToggle
+    MatButtonToggle,
+    MatButtonToggleGroup
   ],
   templateUrl: './language-switcher.component.html',
   styleUrl: './language-switcher.component.css'
